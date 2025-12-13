@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Hide scrollbar for all browsers */
+.scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.scrollbar-none {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.product-card-hover {
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.product-card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px #0000001a;
+}
